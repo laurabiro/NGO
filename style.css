@@ -58,7 +58,31 @@ nav {
     background-color: rgb(206 174 61);
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+nav div:first-child {
+    margin-left: 40px;
+}
+
+#cta-button {
+    background-color: rgb(233 112 31);
+    border: none;
+    border-radius: 0.2em;
+    box-shadow: rgb(51, 48, 48) 1px 1px 5px;
+    font-weight: 600;
+    padding: 5px 10px;
+    margin: 20px;
+}
+.nav-buttons {
+    background-color: transparent;
+    color:black;
+    font-weight: 600;
+    border: none;
+    padding: 3px 6px;
+    margin: 0 5px;
+    
+}
+
 
 
 
@@ -68,6 +92,8 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: whitesmoke;
+    text-shadow: black 1px 1px 2px;
 }
 #cont-leadpage h1:first-child {
     font-size: 50px;
@@ -77,21 +103,36 @@ nav {
 
 #cont-about {
     display: flex;
+    align-items: center;
+    border-bottom: whitesmoke dashed 30px;
+    padding-bottom: 30px;
 }
 #cont-gif {
     flex:1;
+    margin-left: 220px;
+    rotate: 358deg;
+    
 }
 #about {
     display: flex;
     flex-direction: column;
     flex: 1;
+    margin-right: 190px;
 }
-
+#gif {
+    min-height: 100px;
+    max-width: 300px;
+    border: whitesmoke solid 8px;
+    border-radius: 0.2em;
+}
 
 
 #cont-article {
     display: flex;
     flex-direction: column;
+    border-bottom: whitesmoke dashed 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 #articles {
     display: flex;
@@ -118,12 +159,18 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: whitesmoke dashed 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 
 
 #cont-cta {
     display: flex;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 #input {
     display: flex;
