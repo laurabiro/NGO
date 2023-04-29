@@ -1,0 +1,164 @@
+/* --- Reset --- */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+html {
+    color-scheme: dark light;
+}
+
+body {
+    min-height: 100vh;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+/* --- Reset --- */
+
+/* --- Variables --- */
+:root {
+    --bg-img-layer: -10;
+    --nav-layer: 10;
+    
+}
+/* --- Variables --- */
+
+body {
+    color: black;
+    font-family: Dosis;
+    background-color: rgb(163 156 156);
+}
+
+.zug {
+    font-family: Bungee Spice;
+    text-shadow: black 1px 1px 1px;
+    font-size: 30px;
+}
+.quote {
+    font-family: Poltawski Nowy;
+}
+h1 {
+    font-weight: bold;
+}
+h2 {
+    font-weight: bold;
+}
+
+
+
+nav {
+    background-color: rgb(206 174 61);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+#cont-leadpage {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#cont-leadpage h1:first-child {
+    font-size: 50px;
+}
+
+
+
+#cont-about {
+    display: flex;
+}
+#cont-gif {
+    flex:1;
+}
+#about {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+
+#cont-article {
+    display: flex;
+    flex-direction: column;
+}
+#articles {
+    display: flex;
+    align-items: flex-end;
+    
+}
+#articles div {
+    display: flex;
+    flex-direction: column;
+    
+    flex:1;
+}
+.read-button {
+    
+    width: 30%;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+
+
+#cont-review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#cont-cta {
+    display: flex;
+}
+#input {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    width: 50%;
+}
+#input-button {
+    width: 30%;
+}
+#cont-cta div {
+    flex:1;
+}
+
+
+
+#cont-contact {
+    background-color: rgb(206 174 61);
+    display: flex;
+    justify-content: space-between;
+}
+#right-contact {
+    display: flex;
+    flex-direction: column;
+}
+#icons {
+    display: flex;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
