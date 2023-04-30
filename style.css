@@ -31,6 +31,7 @@ img, picture, svg, video {
 }
 /* --- Variables --- */
 
+
 body {
     color: black;
     font-family: Dosis;
@@ -51,11 +52,21 @@ h1 {
 h2 {
     font-weight: bold;
 }
+.pothole {
+    position: absolute;
+
+    min-height: 20px;
+    max-width:50px;
+
+    z-index: -10;
+}
+
 
 
 
 nav {
     background-color: rgb(206 174 61);
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,7 +75,7 @@ nav div:first-child {
     margin-left: 40px;
 }
 
-#cta-button {
+#support-button {
     background-color: rgb(233 112 31);
     border: none;
     border-radius: 0.2em;
@@ -86,17 +97,33 @@ nav div:first-child {
 
 
 
+
 #cont-leadpage {
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     color: whitesmoke;
     text-shadow: black 1px 1px 2px;
 }
 #cont-leadpage h1:first-child {
     font-size: 50px;
+}
+#cta-button {
+    background-color: rgb(206 174 61);
+    border: none;
+    padding: 3px;
+    border-radius: 0.2em;
+}
+#border {
+    border: rgb(233 112 31) solid 1px;
+    border-radius: 0.2em;
+    padding: 15px 5px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 5px rgba(60, 2, 2, 0.5);;
 }
 
 
@@ -104,8 +131,11 @@ nav div:first-child {
 #cont-about {
     display: flex;
     align-items: center;
+
     border-bottom: whitesmoke dashed 30px;
     padding-bottom: 30px;
+
+    position: relative;
 }
 #cont-gif {
     flex:1;
@@ -116,8 +146,10 @@ nav div:first-child {
 #about {
     display: flex;
     flex-direction: column;
+
     flex: 1;
     margin-right: 190px;
+    margin-left: 30px;
 }
 #gif {
     min-height: 100px;
@@ -130,9 +162,12 @@ nav div:first-child {
 #cont-article {
     display: flex;
     flex-direction: column;
+
     border-bottom: whitesmoke dashed 30px;
     padding-top: 30px;
     padding-bottom: 30px;
+
+    position: relative;
 }
 #articles {
     display: flex;
@@ -142,12 +177,26 @@ nav div:first-child {
 #articles div {
     display: flex;
     flex-direction: column;
+
+    background-color: whitesmoke;
+    margin: 0 20px;
     
     flex:1;
 }
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+}
+.card div:first-child {
+    flex: 1;
+}
+.card div:nth-child(2) {
+    flex: 1;
+}
 .read-button {
     
-    width: 30%;
+    width: 40%;
     text-align: left;
     background-color: transparent;
     border: none;
@@ -159,9 +208,12 @@ nav div:first-child {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     border-bottom: whitesmoke dashed 30px;
     padding-top: 30px;
     padding-bottom: 30px;
+
+    position: relative;
 }
 
 
@@ -171,6 +223,8 @@ nav div:first-child {
 
     padding-top: 30px;
     padding-bottom: 30px;
+
+    position: relative;
 }
 #input {
     display: flex;
@@ -178,6 +232,8 @@ nav div:first-child {
 }
 input {
     width: 50%;
+    background-color: whitesmoke;
+    margin-bottom: 10px;
 }
 #input-button {
     width: 30%;
@@ -190,15 +246,23 @@ input {
 
 #cont-contact {
     background-color: rgb(206 174 61);
+
     display: flex;
     justify-content: space-between;
+
+    padding: 20px;
+
 }
 #right-contact {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 #icons {
     display: flex;
+}
+#icon {
+    margin: 10px;
 }
 
 
@@ -206,6 +270,7 @@ input {
 footer {
     display: flex;
     justify-content: center;
+
     background-color: black;
     color: white;
 }
