@@ -32,31 +32,44 @@ img, picture, svg, video {
 /* --- Variables --- */
 
 
+
+
 body {
+    
+    background-color: rgb(163 156 156);
     color: black;
     font-family: Dosis;
-    background-color: rgb(163 156 156);
+    
 }
 
 .zug {
+
     font-family: Bungee Spice;
     text-shadow: black 1px 1px 1px;
     font-size: 30px;
+
 }
 .quote {
+
     font-family: Poltawski Nowy;
+
 }
 h1 {
+
     font-weight: bold;
+
 }
 h2 {
+
     font-weight: bold;
+
 }
 .pothole {
+
     position: absolute;
 
     min-height: 20px;
-    max-width:50px;
+    max-width: 50px;
 
     z-index: -10;
 }
@@ -65,30 +78,38 @@ h2 {
 
 
 nav {
+
     background-color: rgb(206 174 61);
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 nav div:first-child {
-    margin-left: 40px;
-}
 
+    margin-left: 40px;
+
+}
 #support-button {
+
     background-color: rgb(233 112 31);
     border: none;
     border-radius: 0.2em;
     box-shadow: rgb(51, 48, 48) 1px 1px 5px;
     font-weight: 600;
+
     padding: 5px 10px;
     margin: 20px;
+
 }
 .nav-buttons {
+
     background-color: transparent;
     color:black;
     font-weight: 600;
     border: none;
+
     padding: 3px 6px;
     margin: 0 5px;
     
@@ -107,170 +128,417 @@ nav div:first-child {
 
     color: whitesmoke;
     text-shadow: black 1px 1px 2px;
+    background: rgb(0, 0, 0, .6);
+
+    position: relative;
+    min-height: 500px;
+
 }
 #cont-leadpage h1:first-child {
+
     font-size: 50px;
+
 }
+#background {
+
+    position: absolute;
+    top: 0%;
+    min-width: 100%;
+    z-index: -10;
+
+}
+
 #cta-button {
+
     background-color: rgb(206 174 61);
     border: none;
-    padding: 3px;
     border-radius: 0.2em;
+
+    padding: 3px;
+    margin-top: 20px;
+
 }
 #border {
+
     border: rgb(233 112 31) solid 1px;
     border-radius: 0.2em;
-    padding: 15px 5px;
+
     font-weight: 700;
     letter-spacing: 2px;
-    text-shadow: 0 2px 5px rgba(60, 2, 2, 0.5);;
+    text-shadow: 0 2px 5px rgba(60, 2, 2, 0.5);
+
+    padding: 15px 5px;
+    
+}
+#absolute {
+
+    position: absolute;
+    top: 60%;
+    right: 10%;
+
+    letter-spacing: 2px;
+
 }
 
 
 
 #cont-about {
+
     display: flex;
     align-items: center;
 
     border-bottom: whitesmoke dashed 30px;
-    padding-bottom: 30px;
+
+    padding: 30px 0;
 
     position: relative;
+
 }
 #cont-gif {
+
     flex:1;
+
     margin-left: 220px;
+
     rotate: 358deg;
     
 }
 #about {
+
     display: flex;
     flex-direction: column;
 
     flex: 1;
-    margin-right: 190px;
+
+    margin-right: 150px;
     margin-left: 30px;
+
+}
+#about h1:first-child {
+
+    font-size: 30px;
+    padding-bottom: 10px;
+
 }
 #gif {
+
     min-height: 100px;
     max-width: 300px;
+
     border: whitesmoke solid 8px;
     border-radius: 0.2em;
+
 }
 
 
 #cont-article {
+
     display: flex;
     flex-direction: column;
 
     border-bottom: whitesmoke dashed 30px;
+
     padding-top: 30px;
     padding-bottom: 30px;
 
     position: relative;
+
+}
+#cont-article h1:first-child {
+    
+    font-size: 30px;
+    padding-bottom: 30px;
+    margin-left: 100px;
+
 }
 #articles {
+
     display: flex;
     align-items: flex-end;
+
+    margin: 0 20px 50px 20px;
     
 }
 #articles div {
+
     display: flex;
     flex-direction: column;
 
     background-color: whitesmoke;
+
     margin: 0 20px;
+    min-height: 250px;
     
-    flex:1;
+    flex: 1;
+
 }
 .card {
+
     display: flex;
     flex-direction: column;
     flex-flow: column;
+
+}
+#card1 {
+    rotate: 356deg;
+}
+#card2 {
+    rotate: 1deg;
+}
+#card3 {
+    rotate: 358deg;
+}
+#card4 {
+    rotate: 2deg;
 }
 .card div:first-child {
+
     flex: 1;
+
 }
 .card div:nth-child(2) {
-    flex: 1;
+
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 .read-button {
     
-    width: 40%;
-    text-align: left;
     background-color: transparent;
-    border: none;
     color: black;
+    border: none;
+    font-weight: 700;
+    text-align: left;
+
+    margin-top: 10px;
+
 }
 
 
+
+
 #cont-review {
+
     display: flex;
     flex-direction: column;
     align-items: center;
 
     border-bottom: whitesmoke dashed 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 50px 0;
 
     position: relative;
+
 }
+#cont-review h1:first-child {
+    font-size: 30px;
+    padding-bottom: 30px;
+    justify-self: center;
+    margin-right: 50px;
+}
+#lara {
+
+    display: flex;
+    margin-bottom: 50px;
+    
+}
+#lara-text {
+
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 200px;
+    margin-bottom: 30px;
+
+}
+#lara-text h2 {
+
+    padding-left: 200px;
+
+}
+.circle {
+
+    border: black solid 1px;
+    border-radius: 50%;
+    
+    box-shadow: black 2px 2px 0;
+
+}
+.circle img:only-child {
+
+    border-radius: 50%;
+    
+}
+
+#lara div:nth-child(2) {
+
+    align-self: flex-end;
+    
+}
+#flow-left {
+    margin-left: 30px;
+}
+#flow-right {
+    margin-bottom: 30px;
+}
+#bill {
+
+    display: flex;
+
+    margin-left: 200px;
+    margin-bottom: 50px;
+}
+#bill-text {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+#bill-text h2 {
+    padding-right: 200px;
+}
+#bill div:first-child {
+    align-self: flex-end;
+}
+#left-flow {
+    margin-right: 50px;
+}
+#right-flow {
+
+    margin-left: 50px;
+    margin-bottom: 30px;
+
+}
+
 
 
 
 #cont-cta {
+
     display: flex;
 
     padding-top: 30px;
     padding-bottom: 30px;
 
     position: relative;
+
 }
 #input {
+
     display: flex;
     flex-direction: column;
+
 }
 input {
-    width: 50%;
+
+    width: 54%;
     background-color: whitesmoke;
     margin-bottom: 10px;
+
 }
 #input-button {
-    width: 30%;
+
+    width: 20%;
+    align-self: center;
+    margin-right: 60px;
+
+    background-color: rgb(233 112 31);
+    border: none;
+    border-radius: 0.2em;
+    padding: 3px 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+
 }
 #cont-cta div {
-    flex:1;
+
+    flex: 1;
+
+}
+#input h1:first-child {
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+#input p:nth-child(2) {
+    margin-bottom: 5px;
 }
 
 
 
 #cont-contact {
+
     background-color: rgb(206 174 61);
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
-    padding: 20px;
+    padding: 20px 0 20px 50px;
 
 }
 #right-contact {
+
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    margin-right: 100px;
+
+}
+#right-contact p:first-child {
+    font-size: 30px;
+    font-weight: 600;
 }
 #icons {
+
     display: flex;
+
+    margin-bottom: 20px;
+
 }
 #icon {
+
     margin: 10px;
+
+}
+.logo {
+
+    display: flex;
+    align-items: center;
+
+}
+.logo img:first-child {
+
+    margin: 10px;
+
+}
+#etikus {
+
+    margin-top: 10px;
+
+}
+#contact-card {
+
+    padding: 10px 20px;
+
+    border: black solid 1px;
+    border-radius: 0.2em;
+    background-color: aqua;
+
 }
 
 
 
 footer {
+
     display: flex;
     justify-content: center;
 
     background-color: black;
     color: white;
+
+    padding: 15px;
+
 }
