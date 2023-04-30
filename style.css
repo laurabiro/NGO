@@ -73,8 +73,13 @@ h2 {
 
     z-index: -10;
 }
+@media only screen and (max-width: 1400px) {
+    .pothole {
+        width: 100px;
+    }
+}
 #ph1 {
-    top: -20%;
+    top: -10%;
     left: 5%;
     max-width: 300px;
 }
@@ -112,23 +117,23 @@ h2 {
     position: absolute;
 }
 #pin1 {
-    top: 17%;
-    left: 10%;
+    top: 0%;
+    left: 35%;
     z-index: 100;
 }
 #pin2 {
-    top: 17%;
+    top: 0%;
     left: 35%;
     z-index: 100;
 }
 #pin3 {
-    top: 17%;
-    left: 59%;
+    top: 0%;
+    left: 35%;
     z-index: 100;
 }
 #pin4 {
-    top: 17%;
-    right: 11%;
+    top: 0%;
+    left: 35%;
     z-index: 100;
 }
 
@@ -143,6 +148,13 @@ nav {
     justify-content: space-between;
     align-items: center;
 
+    flex-wrap: wrap;
+
+}
+@media only screen and (max-width:1000px) {
+    nav {
+        justify-content: center;
+    }
 }
 nav div:first-child {
 
@@ -197,6 +209,11 @@ nav div:first-child {
     font-size: 50px;
 
 }
+@media only screen and (max-width: 1200px) {
+    #cont-leadpage h1:first-child {
+        font-size: 30px;
+    }
+}
 #background {
 
     position: absolute;
@@ -205,7 +222,6 @@ nav div:first-child {
     z-index: -10;
 
 }
-
 #cta-button {
 
     background-color: rgb(206 174 61);
@@ -231,7 +247,7 @@ nav div:first-child {
 #absolute {
 
     position: absolute;
-    top: 60%;
+    top: 65%;
     right: 10%;
 
     letter-spacing: 2px;
@@ -244,6 +260,8 @@ nav div:first-child {
 
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+
 
     border-bottom: whitesmoke dashed 30px;
 
@@ -254,22 +272,40 @@ nav div:first-child {
 }
 #cont-gif {
 
-    flex:1;
-
-    margin-left: 220px;
-
-    rotate: 358deg;
+    flex: 1 0 300px;
     
+    justify-self: center;
+    rotate: 358deg;
+
+    margin-left: 250px;
+    
+}
+@media only screen and (max-width: 1100px) {
+    #cont-gif {
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+}
+#gif {
+
+    min-height: 100px;
+
+   
+
+    border: whitesmoke solid 8px;
+    border-radius: 0.2em;
+
 }
 #about {
 
     display: flex;
     flex-direction: column;
 
-    flex: 1;
+    flex: 1 0 400px;
 
-    margin-right: 150px;
-    margin-left: 30px;
+    margin-right: 100px;
+    padding-right: 50px;
+    margin-left: 10px;
 
 }
 #about h1:first-child {
@@ -277,16 +313,10 @@ nav div:first-child {
     font-size: 30px;
     padding-bottom: 10px;
 
-}
-#gif {
-
-    min-height: 100px;
-    max-width: 300px;
-
-    border: whitesmoke solid 8px;
-    border-radius: 0.2em;
 
 }
+
+
 
 
 #cont-article {
@@ -315,6 +345,8 @@ nav div:first-child {
     display: flex;
     align-items: flex-end;
 
+    flex-wrap: wrap;
+
     margin: 0 20px 50px 20px;
     
 }
@@ -326,9 +358,10 @@ nav div:first-child {
     background-color: whitesmoke;
 
     margin: 0 20px;
-    min-height: 200px;
+    margin-bottom: 20px;
     
-    flex: 1;
+    
+    flex: 1 0 200px;
 
 }
 .card {
@@ -353,12 +386,14 @@ nav div:first-child {
 .card-p {
     font-size: 13px;
 }
-.card div:first-child {
+.card div:nth-child(2) {
 
     flex: 1;
+    padding-top: 10px;
+    
 
 }
-.card div:nth-child(2) {
+.card div:nth-child(3) {
 
     flex: 0.7;
     display: flex;
@@ -403,7 +438,15 @@ nav div:first-child {
 
     display: flex;
     margin-bottom: 50px;
+    align-items: flex-end;
     
+}
+@media only screen and (max-width: 535px) {
+    #lara {
+
+        flex-wrap: wrap-reverse;
+        margin-bottom: 10px;
+    }
 }
 #lara-text {
 
@@ -411,13 +454,26 @@ nav div:first-child {
     flex-direction: column;
 
     margin-right: 200px;
-    margin-bottom: 30px;
+    
 
+}
+@media only screen and (max-width: 1000px) {
+    #lara-text {
+        margin: 0;
+        
+    }
 }
 #lara-text h2 {
 
     padding-left: 200px;
 
+}
+@media only screen and (max-width: 1000px) {
+    #lara-text h2 {
+        padding-left: 20px;
+
+        
+    }
 }
 .circle {
 
@@ -450,6 +506,14 @@ nav div:first-child {
     margin-left: 200px;
     margin-bottom: 50px;
 }
+@media only screen and (max-width: 1000px) {
+    #bill {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0;
+        
+    }
+}
 #bill-text {
 
     display: flex;
@@ -457,8 +521,21 @@ nav div:first-child {
     align-items: flex-end;
 
 }
+@media only screen and (max-width: 1000px) {
+    #lara-text {
+        margin: 0;
+        
+    }
+}
 #bill-text h2 {
     padding-right: 200px;
+}
+@media only screen and (max-width: 1000px) {
+    #bill-text h2 {
+        padding-right: 20px;
+        display: flex;
+        
+    }
 }
 #bill div:first-child {
     align-self: flex-end;
@@ -480,16 +557,36 @@ nav div:first-child {
 
     display: flex;
 
+    flex-wrap: wrap;
+
     padding-top: 30px;
     padding-bottom: 30px;
 
     position: relative;
 
 }
+#cont-cta div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 30px;
+
+    flex: 1 0 300px;
+
+}
+#rescue {
+    border: whitesmoke solid 8px;
+    border-radius: 0.2em;
+    rotate: 356deg;
+
+}
 #input {
 
     display: flex;
     flex-direction: column;
+
+    flex: 1 0 800px;
+    min-width: 500px;
 
 }
 input {
@@ -508,6 +605,8 @@ input {
     background-color: rgb(233 112 31);
     border: none;
     border-radius: 0.2em;
+    box-shadow: rgb(51, 48, 48) 1px 1px 5px;
+
     padding: 3px 0;
     font-weight: 600;
     letter-spacing: 1px;
@@ -536,8 +635,13 @@ input {
     justify-content: space-between;
     align-items: center;
 
+    flex-wrap: wrap;
+
     padding: 20px 0 20px 50px;
 
+}
+#left-contact {
+    flex: 1 0 500px;
 }
 #right-contact {
 
@@ -545,12 +649,13 @@ input {
     flex-direction: column;
     align-items: center;
 
-    margin-right: 100px;
+    flex: 1;
 
 }
 #right-contact p:first-child {
     font-size: 30px;
     font-weight: 600;
+    margin-top: 20px;
 }
 #icons {
 
@@ -586,7 +691,7 @@ input {
 
     border: black solid 1px;
     border-radius: 0.2em;
-    background-color: aqua;
+    background-color: rgb(213, 215, 206);
 
 }
 #support-bold {
