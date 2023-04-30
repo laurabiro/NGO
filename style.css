@@ -73,6 +73,64 @@ h2 {
 
     z-index: -10;
 }
+#ph1 {
+    top: -20%;
+    left: 5%;
+    max-width: 300px;
+}
+#ph2 {
+    max-width: 100px;
+    top: 72%;
+    right: 10%;
+}
+#ph3 {
+    top:-12%;
+    right: 10%;
+    max-width: 350px;
+}
+#ph4 {
+    max-width: 300px;
+    top: 60%;
+    left:15%;
+}
+#ph5 {
+    max-width: 200px;
+    top: 5%;
+    left: 5%;
+}
+#ph6 {
+    max-width: 150px;
+    top: 15%;
+    right: 10%
+}
+#ph7 {
+    max-width: 200px;
+    top: 15%;
+    right: 5%;
+}
+.pins {
+    position: absolute;
+}
+#pin1 {
+    top: 17%;
+    left: 10%;
+    z-index: 100;
+}
+#pin2 {
+    top: 17%;
+    left: 35%;
+    z-index: 100;
+}
+#pin3 {
+    top: 17%;
+    left: 59%;
+    z-index: 100;
+}
+#pin4 {
+    top: 17%;
+    right: 11%;
+    z-index: 100;
+}
 
 
 
@@ -160,7 +218,7 @@ nav div:first-child {
 }
 #border {
 
-    border: rgb(233 112 31) solid 1px;
+    border: rgb(233 112 31) solid 2px;
     border-radius: 0.2em;
 
     font-weight: 700;
@@ -248,7 +306,8 @@ nav div:first-child {
     
     font-size: 30px;
     padding-bottom: 30px;
-    margin-left: 100px;
+    align-self: center;
+    margin-right: 100px;
 
 }
 #articles {
@@ -267,7 +326,7 @@ nav div:first-child {
     background-color: whitesmoke;
 
     margin: 0 20px;
-    min-height: 250px;
+    min-height: 200px;
     
     flex: 1;
 
@@ -290,6 +349,9 @@ nav div:first-child {
 }
 #card4 {
     rotate: 2deg;
+}
+.card-p {
+    font-size: 13px;
 }
 .card div:first-child {
 
@@ -370,7 +432,6 @@ nav div:first-child {
     border-radius: 50%;
     
 }
-
 #lara div:nth-child(2) {
 
     align-self: flex-end;
@@ -527,6 +588,9 @@ input {
     border-radius: 0.2em;
     background-color: aqua;
 
+}
+#support-bold {
+    font-weight: 600;
 }
 
 
