@@ -201,7 +201,7 @@ nav div:first-child {
     background: rgb(0, 0, 0, .6);
 
     position: relative;
-    min-height: 500px;
+    min-height: 700px;
 
 }
 #cont-leadpage h1:first-child {
@@ -242,6 +242,7 @@ nav div:first-child {
     text-shadow: 0 2px 5px rgba(60, 2, 2, 0.5);
 
     padding: 15px 5px;
+
     
 }
 #absolute {
@@ -314,6 +315,9 @@ nav div:first-child {
     padding-bottom: 10px;
 
 
+}
+#text-align {
+    text-align: justify;
 }
 
 
@@ -556,11 +560,13 @@ nav div:first-child {
 #cont-cta {
 
     display: flex;
+    
 
     flex-wrap: wrap;
 
     padding-top: 30px;
     padding-bottom: 30px;
+    margin-left: 100px;
 
     position: relative;
 
@@ -578,7 +584,14 @@ nav div:first-child {
     border: whitesmoke solid 8px;
     border-radius: 0.2em;
     rotate: 356deg;
+    margin: 50px 0 0 100px;
 
+}
+@media only screen and (max-width: 1000px) {
+    #rescue {
+        margin: 0 100px 0 0;    
+        
+    }
 }
 #input {
 
@@ -587,7 +600,14 @@ nav div:first-child {
 
     flex: 1 0 800px;
     min-width: 500px;
-
+    margin-left: 100px;
+    
+}
+@media only screen and (max-width: 1000px) {
+    #input {
+        margin: 0;    
+        
+    }
 }
 input {
 
@@ -612,19 +632,22 @@ input {
     letter-spacing: 1px;
 
 }
-#cont-cta div {
-
-    flex: 1;
-
-}
 #input h1:first-child {
     margin-bottom: 5px;
     font-size: 30px;
 }
-#input p:nth-child(2) {
+#input span:nth-child(2) {
     margin-bottom: 5px;
 }
-
+#input p {
+    font-weight: 600;
+}
+.longer {
+    padding-bottom: 60px;
+}
+.shorter {
+    padding-bottom: 10px;
+}
 
 
 #cont-contact {
@@ -652,7 +675,7 @@ input {
     flex: 1;
 
 }
-#right-contact p:first-child {
+#contact-title {
     font-size: 30px;
     font-weight: 600;
     margin-top: 20px;
@@ -688,11 +711,18 @@ input {
 #contact-card {
 
     padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     border: black solid 1px;
     border-radius: 0.2em;
     background-color: rgb(213, 215, 206);
 
+}
+#question-bold {
+    font-weight: 700;
+    font-size: 30px;
 }
 #support-bold {
     font-weight: 600;
