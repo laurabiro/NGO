@@ -742,122 +742,153 @@ footer {
 
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px){
+/*mobile*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
     nav {
        display: flex;
        justify-content: flex-start;
     }
+
     nav div:first-child {
        margin-left:0;
        
     }
+
     #cont-leadpage {
        min-height: 300px;
     }
-    #background{
+
+    #background {
         height: 300px;
     }
+
     #cont-leadpage h1:first-child{
         font-size: 1.4rem;
     }
+
     #absolute {
      top:45%;
     }
-    #cta-button{
+
+    #cta-button {
         margin-top: 60px; 
     }
-    #border{
+
+    #border {
         font-size: 13px; 
         padding: 10px 0;
     }
-    #ph1{
+
+    #ph1 {
         display: none;
     }
-    #ph2{
+
+    #ph2 {
         display: none; 
     }
-    #ph3{
-        display: none; 
-     }
 
-    #cont-gif{
+    #ph3 {
+        display: none; 
+    }
+
+    #cont-gif {
         padding-left: 10%;
         width:100px;
     }
-    #cont-article h1:first-child{
+
+    #cont-article h1:first-child {
         margin-right: 0;
     }
-    div #card1{
+
+    div #card1 {
         margin-top: 50px;
         margin-bottom: 50px;
     }
-    div #card2{
+
+    div #card2 {
         margin-top: 50px;
         margin-bottom: 50px;
     }
-    div #card3{
+
+    div #card3 {
         margin-top: 50px;
         margin-bottom: 50px;
     }
-    div #card4{
+
+    div #card4 {
     margin-top: 50px;
     margin-bottom: 50px;
     }
-    #cont-review h1:first-child{
+
+    #cont-review h1:first-child {
         margin-right: 0;
         padding-bottom: 100px;
     }
-    #lara{
+
+    #lara {
         display: flex;
         flex-direction: column;
     }
-    .circle{
+
+    .circle {
         margin-top:50px;
         margin-bottom: 50px;
        
     }
-    #bill{
+
+    #bill {
         display: flex;
         flex-direction: column-reverse;
         align-items: end;
         
     }
-    #cont-cta{
+
+    #cont-cta {
         display: flex;
         margin: 0;
         padding: 0;
     }
-    #rescue{
+
+    #rescue {
         width: 280px;
         margin-top: 50px;
         margin-left: 50px;
     }
-    #input h1:first-child{
+
+    #input h1:first-child {
         font-size: 1.5rem;
     }
 
-    #input{
+    #input {
         flex: 1 0 200px;
         flex-direction: column;
         margin-left:55px;
     }
-    #input-button{
+
+    #input-button {
         margin-bottom: 80px;
     }
-    #input span:nth-child(2){
+
+    #input span:nth-child(2) {
         font-size: 1rem;
         width:200px;
     }
-    #cont-contact{
-     padding: 0 0; 
+
+    #cont-contact {
+        padding: 0 0; 
     }
-    #left-contact{
+
+    #left-contact {
         margin-left: 45px;
     }
-    #ph7{
+
+    #ph7 {
         display: none;
     }
-    #contact-card{
+
+    #contact-card {
         margin-bottom: 30px;
     }
-    }
+}
+
+
